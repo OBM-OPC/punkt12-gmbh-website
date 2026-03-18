@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchung – Punkt 12 Verwaltungs GmbH</title>
+    <meta name="description" content="Buchen Sie Ihr Zimmer einfach und bequem online. Prüfen Sie die Verfügbarkeit und reservieren Sie direkt.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Punkt 12</span>
+                <span class="logo-badge">GmbH</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="zimmer.html" class="nav-link">Zimmer</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                </ul>
+                <a href="buchung.html" class="btn btn-accent">Verfügbarkeit prüfen</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="section-label">Buchung</span>
+                <h1 class="page-header-title">Ihre Reservierung</h1>
+                <p class="page-header-desc">Schnell, einfach und sicher buchen</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="booking-steps">
+                    <div class="booking-step active">
+                        <div class="booking-step-number">1</div>
+                        <span>Daten</span>
+                    </div>
+                    
+                    <div class="booking-step">
+                        <div class="booking-step-number">2</div>
+                        <span>Details</span>
+                    </div>
+                    
+                    <div class="booking-step">
+                        <div class="booking-step-number">3</div>
+                        <span>Bestätigung</span>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <h2>Schritt 1: Zeitraum wählen</h2>
+                    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="checkin">Anreise *</label>
+                                <input type="date" id="checkin" name="checkin" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="checkout">Abreise *</label>
+                                <input type="date" id="checkout" name="checkout" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="erwachsene">Erwachsene *</label>
+                                <select id="erwachsene" name="erwachsene" class="form-select" required>
+                                    <option value="1">1 Erwachsener</option>
+                                    <option value="2">2 Erwachsene</option>
+                                    <option value="3">3 Erwachsene</option>
+                                    <option value="4">4 Erwachsene</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="kinder">Kinder</label>
+                                <select id="kinder" name="kinder" class="form-select">
+                                    <option value="0">Keine</option>
+                                    <option value="1">1 Kind</option>
+                                    <option value="2">2 Kinder</option>
+                                    <option value="3">3 Kinder</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="zimmer">Zimmerkategorie *</label>
+                            <select id="zimmer" name="zimmer" class="form-select" required>
+                                <option value="">Bitte wählen...</option>
+                                <option value="einzel-komfort">Komfort Einzelzimmer (45€/Nacht)</option>
+                                <option value="einzel-standard">Standard Einzelzimmer (35€/Nacht)</option>
+                                <option value="doppel-premium">Premium Doppelzimmer (75€/Nacht)</option>
+                                <option value="doppel-standard">Standard Doppelzimmer (60€/Nacht)</option>
+                                <option value="apartment-deluxe">Deluxe Apartment (120€/Nacht)</option>
+                                <option value="apartment-family">Family Apartment (150€/Nacht)</option>
+                            </select>
+                        </div>
+                        
+                        <hr style="margin: 32px 0; border: none; border-top: 1px solid var(--color-secondary);">
+                        
+                        <h3>Ihre Kontaktdaten</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="vorname">Vorname *</label>
+                                <input type="text" id="vorname" name="vorname" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="nachname">Nachname *</label>
+                                <input type="text" id="nachname" name="nachname" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="telefon">Telefon *</label>
+                                <input type="tel" id="telefon" name="telefon" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="anmerkungen">Besondere Wünsche / Anmerkungen</label>
+                            <textarea id="anmerkungen" name="anmerkungen" class="form-textarea" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                                <input type="checkbox" required style="margin-top: 4px;">
+                                <span>Ich habe die <a href="#">Datenschutzerklärung</a> und die <a href="#">AGB</a> gelesen und akzeptiere sie. *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">Buchung absenden</button>
+                    
+</form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Punkt 12</span>
+                        <span class="logo-badge">GmbH</span>
+                    </a>
+                    <p class="footer-desc">Professionelle Vermietung in einem besonderen Umfeld. Zuverlässig, komfortabel, persönlich.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="zimmer.html">Zimmer</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Informationen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Preise</a></li>
+                        <li><a href="#">Anfahrtsu003c/a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <address class="footer-address">
+                        Punkt 12 Verwaltungs GmbH<br>
+                        Musterstraße 12<br>
+                        12345 Musterstadt<br><br>
+                        <a href="tel:+491234567891">0123 4567891</a><br>
+                        <a href="mailto:info@punkt12-gmbh.de">info@punkt12-gmbh.de</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Punkt 12 Verwaltungs GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

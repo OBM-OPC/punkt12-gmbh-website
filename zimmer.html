@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimmer – Punkt 12 Verwaltungs GmbH</title>
+    <meta name="description" content="Entdecken Sie unsere komfortablen Zimmer und Apartments. Professionell verwaltet, persönlich betreut.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Punkt 12</span>
+                <span class="logo-badge">GmbH</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="zimmer.html" class="nav-link active">Zimmer</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                </ul>
+                <a href="buchung.html" class="btn btn-accent">Verfügbarkeit prüfen</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="section-label">Unser Angebot</span>
+                <h1 class="page-header-title">Unsere Zimmer</h1>
+                <p class="page-header-desc">Von gemütlichen Einzelzimmern bis zu geräumigen Apartments</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    <button class="filter-btn" data-filter="einzel">Einzelzimmer</button>
+                    <button class="filter-btn" data-filter="doppel">Doppelzimmer</button>
+                    <button class="filter-btn" data-filter="apartment">Apartments</button>
+                </div>
+
+                <div class="zimmer-grid">
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #2C3E5020, #B8733320);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Einzelzimmer</span>
+                            <h3 class="zimmer-title">Komfort Einzelzimmer</h3>
+                            <p class="zimmer-desc">Gemütliches Zimmer mit eigenem Bad, Schreibtisch und WLAN.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 1 Bett</span>
+                                <span>🚿 Eigenes Bad</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>45€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #B8733320, #2C3E5020);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Doppelzimmer</span>
+                            <h3 class="zimmer-title">Premium Doppelzimmer</h3>
+                            <p class="zimmer-desc">Geräumiges Zimmer mit Kingsize-Bett, Sitzecke und modernem Bad.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 2 Betten</span>
+                                <span>🛋️ Sitzecke</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>75€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge limited">Wenige frei</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #E8E0D540, #2C3E5020);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Apartment</span>
+                            <h3 class="zimmer-title">Deluxe Apartment</h3>
+                            <p class="zimmer-desc">Voll ausgestattetes Apartment mit Küche, Wohnzimmer und separatem Schlafbereich.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 2 Betten</span>
+                                <span>🍳 Küche</span>
+                                <span>🏠 Wohnzimmer</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>120€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #2C3E5020, #E8E0D540);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Einzelzimmer</span>
+                            <h3 class="zimmer-title">Standard Einzelzimmer</h3>
+                            <p class="zimmer-desc">Funktionales Zimmer mit allen notwendigen Annehmlichkeiten für Kurzaufenthalte.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 1 Bett</span>
+                                <span>🚿 Gemeinschaftsbad</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>35€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #B8733320, #E8E0D540);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Doppelzimmer</span>
+                            <h3 class="zimmer-title">Standard Doppelzimmer</h3>
+                            <p class="zimmer-desc">Komfortables Zimmer mit Doppelbett, ideal für Paare oder Freunde.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 2 Betten</span>
+                                <span>🚿 Eigenes Bad</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>60€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge booked">Ausgebucht</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #E8E0D540, #B8733320);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Apartment</span>
+                            <h3 class="zimmer-title">Family Apartment</h3>
+                            <p class="zimmer-desc">Großzügiges Apartment für Familien mit bis zu 4 Personen, inkl. Kinderbett.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 4 Betten</span>
+                                <span>🍳 Küche</span>
+                                <span>👶 Kinderbett</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>150€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Punkt 12</span>
+                        <span class="logo-badge">GmbH</span>
+                    </a>
+                    <p class="footer-desc">Professionelle Vermietung in einem besonderen Umfeld. Zuverlässig, komfortabel, persönlich.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="zimmer.html">Zimmer</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Informationen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Preise</a></li>
+                        <li><a href="#">Anfahrt</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <address class="footer-address">
+                        Punkt 12 Verwaltungs GmbH<br>
+                        Musterstraße 12<br>
+                        12345 Musterstadt<br><br>
+                        <a href="tel:+491234567891">0123 4567891</a><br>
+                        <a href="mailto:info@punkt12-gmbh.de">info@punkt12-gmbh.de</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Punkt 12 Verwaltungs GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

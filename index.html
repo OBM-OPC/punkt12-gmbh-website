@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punkt 12 Verwaltungs GmbH – Professionelle Vermietung</title>
+    <meta name="description" content="Punkt 12 Verwaltungs GmbH bietet professionelle, komfortable Vermietung in einem besonderen Umfeld. Entdecken Sie unsere Zimmer und Apartments.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Punkt 12</span>
+                <span class="logo-badge">GmbH</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="zimmer.html" class="nav-link">Zimmer</a></li>
+                    <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+                </ul>
+                <a href="buchung.html" class="btn btn-accent">Verfügbarkeit prüfen</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Professionelle Vermietung</span>
+                    <h1 class="hero-title">Ihr Zuhause auf Zeit</h1>
+                    <p class="hero-text">Komfortable Zimmer und Apartments in einem besonderen Umfeld. Professionell verwaltet, persönlich betreut.</p>
+                    <div class="hero-actions">
+                        <a href="zimmer.html" class="btn btn-accent btn-lg">Zimmer ansehen</a>
+                        <a href="buchung.html" class="btn btn-primary btn-lg">Jetzt buchen</a>
+                    </div>
+                </div>
+
+                <div class="booking-widget">
+                    <h3>Verfügbarkeit prüfen</h3>
+                    
+                    <form class="booking-form-widget">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="checkin">Anreise</label>
+                                <input type="date" id="checkin" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="checkout">Abreise</label>
+                                <input type="date" id="checkout" class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="guests">Gäste</label>
+                            <select id="guests" class="form-select">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Personen</option>
+                                <option value="3">3 Personen</option>
+                                <option value="4">4 Personen</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">Suchen</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section section-features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Warum wir?</span>
+                    <h2 class="section-title">Ihre Vorteile auf einen Blick</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Professionelle Verwaltung</h3>
+                        <p>Zuverlässig, erfahren und immer für Sie da.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Komfortable Ausstattung</h3>
+                        <p>Durchdachte Einrichtung für Ihr Wohlbefinden.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Flexible Buchung</h3>
+                        <p>Kurz- und Langzeitmiete nach Ihren Bedürfnissen.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Zentrale Lage</h3>
+                        <p>Gut angebunden und dennoch ruhig gelegen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zimmer Preview -->
+        <section class="section section-zimmer">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Unsere Zimmer</span>
+                    <h2 class="section-title">Entdecken Sie Ihr neues Zuhause</h2>
+                    <p class="section-desc">Von gemütlichen Einzelzimmern bis zu geräumigen Apartments – wir haben das Passende für Sie</p>
+                </div>
+                
+                <div class="zimmer-grid">
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #2C3E5020, #B8733320);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Einzelzimmer</span>
+                            <h3 class="zimmer-title">Komfort Einzelzimmer</h3>
+                            <p class="zimmer-desc">Gemütliches Zimmer mit eigenem Bad, Schreibtisch und WLAN.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 1 Bett</span>
+                                <span>🚿 Eigenes Bad</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>45€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge available">Verfügbar</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #B8733320, #2C3E5020);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Doppelzimmer</span>
+                            <h3 class="zimmer-title">Premium Doppelzimmer</h3>
+                            <p class="zimmer-desc">Geräumiges Zimmer mit Kingsize-Bett, Sitzecke und modernem Bad.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 2 Betten</span>
+                                <span>🛋️ Sitzecke</span>
+                                <span>📶 WLAN</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>75€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="zimmer-card">
+                        <div class="zimmer-image">
+                            <div class="zimmer-badge limited">Wenige frei</div>
+                            <div class="zimmer-img-placeholder" style="background: linear-gradient(135deg, #E8E0D540, #2C3E5020);"></div>
+                        </div>
+                        <div class="zimmer-content">
+                            <span class="zimmer-type">Apartment</span>
+                            <h3 class="zimmer-title">Deluxe Apartment</h3>
+                            <p class="zimmer-desc">Voll ausgestattetes Apartment mit Küche, Wohnzimmer und separatem Schlafbereich.</p>
+                            
+                            <div class="zimmer-features">
+                                <span>🛏️ 2 Betten</span>
+                                <span>🍳 Küche</span>
+                                <span>🏠 Wohnzimmer</span>
+                            </div>
+                            
+                            <div class="zimmer-footer">
+                                <div class="zimmer-price">
+                                    <strong>120€</strong>
+                                    <span>/Nacht</span>
+                                </div>
+                                <a href="zimmer-detail.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="zimmer.html" class="btn btn-secondary">Alle Zimmer ansehen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Bereit einzuziehen?</h2>
+                        <p class="cta-text">Prüfen Sie die Verfügbarkeit und buchen Sie direkt online. Bei Fragen sind wir gerne für Sie da.</p>
+                        <div class="cta-actions">
+                            <a href="buchung.html" class="btn btn-accent btn-lg">Jetzt buchen</a>
+                            <a href="kontakt.html" class="btn btn-ghost btn-lg">Kontakt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Punkt 12</span>
+                        <span class="logo-badge">GmbH</span>
+                    </a>
+                    <p class="footer-desc">Professionelle Vermietung in einem besonderen Umfeld. Zuverlässig, komfortabel, persönlich.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="zimmer.html">Zimmer</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Informationen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Preise</a></li>
+                        <li><a href="#">Anfahrt</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <address class="footer-address">
+                        Punkt 12 Verwaltungs GmbH<br>
+                        Musterstraße 12<br>
+                        12345 Musterstadt<br><br>
+                        <a href="tel:+491234567891">0123 4567891</a><br>
+                        <a href="mailto:info@punkt12-gmbh.de">info@punkt12-gmbh.de</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Punkt 12 Verwaltungs GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
